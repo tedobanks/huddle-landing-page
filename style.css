@@ -144,6 +144,7 @@ main {
 
     .main-content {
         width: 43%;
+        align-items: start;
     }
 
     .tagline {
@@ -156,6 +157,7 @@ main {
     }
 
     .socials {
+        width: 100%;
         justify-content: end;
     }
 }
