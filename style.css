@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsl(257, 40%, 49%);
+}
+
+main {
+    width: 100%;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 60px;
+}
+
+.logo-container img {
+    width: 125px;
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.illustration-container {
+    width: 96%;
+    margin-bottom: 40px;
+}
+
+.illustration-container img {
+    width: 100%;
+}
+
+.tagline {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon-container:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.icon-container:hover svg {
+    fill: hsl(300, 69%, 71%);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .content-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .illustration-container {
+        width: 53%;
+    }
+
+    .main-content {
+        width: 43%;
+    }
+
+    .tagline {
+        text-align: start;
+    }
+
+    .description {
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .socials {
+        justify-content: end;
+    }
+}
